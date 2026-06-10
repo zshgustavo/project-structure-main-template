@@ -1,0 +1,14 @@
+{
+  "app": {
+    "name": "project-structure-main-template",
+    "env": "development",
+    "logLevel": "debug"
+  },
+  "api": {
+    "port": 4000,
+    "corsOrigins": ["http://localhost:3000"]
+  },
+  "features": {
+    "newDashboard": false
+  }
+}

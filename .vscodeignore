@@ -1,0 +1,96 @@
+# Dependencies
+node_modules/
+vendor/
+.venv/
+venv/
+__pycache__/
+
+# Build & generated output
+dist/
+build/
+out/
+target/
+.next/
+.nuxt/
+.cache/
+.turbo/
+coverage/
+*.min.js
+*.min.css
+*.map
+
+# Large/binary assets
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.dmg
+*.iso
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.deb
+*.rpm
+*.exe
+*.dll
+*.so
+*.dylib
+*.jar
+*.war
+*.woff2
+*.woff
+*.ttf
+*.otf
+*.eot
+*.ico
+*.pdf
+
+# Images (keep small svgs; skip heavy raster)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.tiff
+*.psd
+
+# Logs & temp
+logs/
+*.log
+tmp/
+temp/
+test-results/
+playwright-report/
+
+# Infrastructure state
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Git internals
+.git/
+
+# Lock files (large, low value for AI indexing)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+poetry.lock
+Pipfile.lock
+Cargo.lock
+go.sum
+
+# Secrets & env
+.env
+.env.*
+secrets/
+*.pem
+*.key
+
+# OS & editor junk
+.DS_Store
+Thumbs.db
+.idea/
