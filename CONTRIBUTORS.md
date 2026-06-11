@@ -11,4 +11,4 @@ People who have contributed to this project through accepted pull requests.
 <!-- contributors:start -->
 <!-- contributors:end -->
 
-*This list is updated automatically when pull requests are merged. Bots and apps (e.g. Dependabot, Copilot) are not included.*
+*This list is updated automatically when pull requests are merged. Bots and automated apps are not included.*
