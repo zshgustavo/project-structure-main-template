@@ -17,6 +17,8 @@ Thank you for contributing to this project.
 4. Run lint and tests before opening a PR.
 5. Open a pull request using the provided template.
 
+Accepted pull requests automatically add your GitHub username to [CONTRIBUTORS.md](CONTRIBUTORS.md) (bots and apps are excluded).
+
 ## Code standards
 
 - Keep shared logic in `packages/`, not duplicated across apps.
