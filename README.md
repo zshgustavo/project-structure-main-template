@@ -6,7 +6,7 @@ A production-ready monorepo scaffold for large, multi-service **AI agent** appli
 
 **Repository:** [github.com/zshgustavo/project-structure-main-template](https://github.com/zshgustavo/project-structure-main-template)  
 **Wiki:** [GitHub Wiki documentation](https://github.com/zshgustavo/project-structure-main-template/wiki)  
-**Current release:** `v1.0.0`  
+**Current release:** [`v1.1.0`](https://github.com/zshgustavo/project-structure-main-template/releases/tag/v1.1.0)  
 **Portuguese README:** [README-ptbr.md](README-ptbr.md)
 
 ---

@@ -6,7 +6,7 @@ Modelo de monorepo pronto para produção, voltado a aplicações complexas e mu
 
 **Repositório:** [github.com/zshgustavo/project-structure-main-template](https://github.com/zshgustavo/project-structure-main-template)  
 **Wiki:** [Documentação no GitHub Wiki](https://github.com/zshgustavo/project-structure-main-template/wiki)  
-**Versão atual:** `v1.0.0`
+**Versão atual:** [`v1.1.0`](https://github.com/zshgustavo/project-structure-main-template/releases/tag/v1.1.0)
 
 ---
 
