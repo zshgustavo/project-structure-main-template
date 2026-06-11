@@ -135,6 +135,12 @@ go.work.sum
 *.sqlite3
 *.db
 
+# AI / GCP credentials
+*-service-account*.json
+gcp-*.json
+credentials.json
+tests/evals/results/
+
 # Misc
 *.local
 *.bak

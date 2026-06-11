@@ -1,0 +1,35 @@
+{
+  "description": "Which model each agent role uses. Override via env: LLM_ORCHESTRATOR, LLM_RESEARCHER, LLM_WRITER, LLM_DEFAULT",
+  "agents": {
+    "orchestrator": {
+      "provider": "vertex_ai",
+      "model": "vertex_ai/gemini-2.0-flash",
+      "fallback": "openai/gpt-4o"
+    },
+    "researcher": {
+      "provider": "anthropic",
+      "model": "anthropic/claude-sonnet-4-20250514",
+      "fallback": "vertex_ai/gemini-2.0-flash"
+    },
+    "writer": {
+      "provider": "openai",
+      "model": "openai/gpt-4o",
+      "fallback": "gemini/gemini-2.0-flash"
+    }
+  },
+  "channels": {
+    "manus_im": {
+      "description": "Manus autonomous agent (manus.im) — external messaging channel",
+      "default_model": "vertex_ai/gemini-2.0-flash",
+      "config": "config/integrations/manus.md"
+    },
+    "grok_cli": {
+      "description": "Grok CLI coding assistant",
+      "skills": ".grok/skills/"
+    },
+    "copilot": {
+      "description": "GitHub Copilot in VS Code / PyCharm",
+      "config": ".github/copilot-instructions.md"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+---
+description: AI agent project conventions — CrewAI, multi-LLM, GCP Vertex
+globs:
+  - apps/agent/**
+  - prompts/**
+  - config/ai/**
+  - packages/tools/**
+  - tests/evals/**
+alwaysApply: false
+---
+
+# AI project rules
+
+Read root `AGENTS.md` before modifying agent code.
+
+## CrewAI
+
+- Use `crewai.LLM` with LiteLLM model strings from `config/ai/models.json`
+- YAML config: `apps/agent/src/project_agent/config/agents.yaml` and `tasks.yaml`
+- Package manager: `uv` (run commands from `apps/agent/`)
+
+## Prompts & routing
+
+- System prompts in `prompts/system/` — not hardcoded in Python for production paths
+- Model routing in `config/ai/routing.json` — update evals when changed
+
+## Secrets
+
+- Never commit API keys or GCP service account files
+- Use `.env` (see `.env.example`)
+
+## Providers in use
+
+OpenAI (GPT), Anthropic (Claude), Google Gemini, Vertex AI (GCP), Grok (xAI), Manus IM (external channel)

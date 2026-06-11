@@ -1,0 +1,3 @@
+{"id": "smoke-001", "input": {"topic": "What is the primary agent framework in this project?"}, "expected_contains": ["CrewAI"], "agent": "orchestrator"}
+{"id": "smoke-002", "input": {"topic": "What is the default cloud LLM provider?"}, "expected_contains": ["Vertex", "Gemini", "GCP"], "agent": "researcher"}
+{"id": "smoke-003", "input": {"topic": "List the IDE tools supported"}, "expected_contains": ["VS Code", "Cursor"], "agent": "writer"}

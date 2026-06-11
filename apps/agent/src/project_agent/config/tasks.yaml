@@ -1,0 +1,29 @@
+---
+research_task:
+  description: >
+    Research {topic} thoroughly. Identify key facts, trade-offs, and
+    recommendations relevant to a GCP + multi-LLM agent project.
+  expected_output: >
+    A structured research brief with sections: Summary, Key Findings,
+    Risks, and Recommended Next Steps.
+  agent: researcher
+
+writing_task:
+  description: >
+    Using the research brief, produce a polished deliverable about {topic}.
+  expected_output: >
+    A final markdown document ready for review, under 800 words unless
+    the topic requires more detail.
+  agent: writer
+  context:
+    - research_task
+
+orchestration_review:
+  description: >
+    Review the final deliverable for accuracy, completeness, and alignment
+    with project goals for {topic}.
+  expected_output: >
+    The approved final deliverable with a short review note at the top.
+  agent: orchestrator
+  context:
+    - writing_task

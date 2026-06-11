@@ -1,0 +1,25 @@
+{
+  "input": {
+    "max_length_chars": 32000,
+    "blocked_patterns": [
+      "ignore previous instructions",
+      "reveal system prompt",
+      "print environment variables"
+    ],
+    "pii_warning": true
+  },
+  "output": {
+    "require_citations_for_facts": true,
+    "max_output_tokens": 8192,
+    "blocked_topics": []
+  },
+  "security": {
+    "never_log_api_keys": true,
+    "never_return_secrets_in_output": true,
+    "sanitize_tool_outputs": true
+  },
+  "cost": {
+    "warn_above_usd_per_run": 2.0,
+    "prefer_cheaper_model_for_drafts": true
+  }
+}

@@ -1,22 +1,27 @@
 # Project Structure Main Template
 
-A production-ready monorepo scaffold for large, multi-service applications.
+A production-ready monorepo scaffold for large, multi-service **AI agent** applications.
+
+**AI stack:** CrewAI · GCP Vertex AI · Gemini · Claude · GPT · Grok · Copilot · Manus IM
 
 ## Structure
 
 ```
 project-structure-main-template/
-├── apps/              # Deployable applications (api, web, worker)
-├── packages/          # Shared libraries consumed by apps & services
-├── services/          # Standalone microservices
-├── infrastructure/    # Docker, Kubernetes, Terraform
-├── docs/              # Architecture, API specs, ADRs, guides
-├── scripts/           # Setup, deploy, and CI helper scripts
-├── tests/             # Cross-cutting test suites
-├── config/            # Environment configs and schemas
-├── tools/             # Internal dev tooling
-└── assets/            # Static assets (images, fonts)
+├── AGENTS.md          # AI assistant instructions (all IDEs)
+├── apps/              # agent (CrewAI), api, web, worker
+├── packages/          # Shared libraries + tools/
+├── prompts/           # System prompts and templates
+├── config/ai/         # Model routing, guardrails
+├── .grok/skills/      # Grok CLI project skills
+├── .cursor/rules/     # Cursor AI rules
+├── infrastructure/    # Docker, K8s, Terraform, gcp/
+├── docs/ai/           # AI architecture and provider docs
+├── tests/evals/       # Agent evaluation suite
+└── ...                # services, scripts, assets, etc.
 ```
+
+See [AGENTS.md](AGENTS.md) for full AI development guide.
 
 ## Quick start
 
